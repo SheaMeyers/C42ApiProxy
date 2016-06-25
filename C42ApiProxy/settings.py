@@ -55,7 +55,7 @@ ROOT_URLCONF = 'C42ApiProxy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'C42ApiProxy/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

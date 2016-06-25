@@ -1,6 +1,7 @@
 import json
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
@@ -11,4 +12,4 @@ def index(request):
         "names": ["Bob", "Ella"]
     }
 
-    return HttpResponse(json.dumps(response_dict))
+    return render(request, 'global.html', {'response_dict': response_dict})
