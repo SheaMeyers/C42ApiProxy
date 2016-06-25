@@ -3,8 +3,10 @@ from django.shortcuts import render
 
 def index(request):
 
+    event_id = request.path.split('/')[2]
+
     response_dict = {
-        "id": "$EVENT_ID",
+        "id": event_id,
         "title": "Test Event",
         "names": ["Bob", "Ella"]
     }

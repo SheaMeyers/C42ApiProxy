@@ -25,5 +25,7 @@ The way that I am approaching this project:
 ## External libraries to be used
 
 [Django](https://www.djangoproject.com/)
+
 [Requests](http://docs.python-requests.org/en/master/)
+
 [Httpie](https://github.com/jkbrzt/httpie) *Only used for testing purposes
