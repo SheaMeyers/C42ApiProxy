@@ -1,3 +1,9 @@
+## To start server
+
+```python
+ python manage.py runserver
+```
+
 ## Outline
 
 The way that I am approaching this project:
