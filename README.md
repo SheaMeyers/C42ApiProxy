@@ -22,10 +22,12 @@ The way that I am approaching this project:
 
 6. I'll change my api endpoint function to get the data from the two helper functions and return the requested data rather than the stub.
 
+7. Add caching so api response is cached.
+
 ## External libraries to be used
 
 [Django](https://www.djangoproject.com/)
 
-[Requests](http://docs.python-requests.org/en/master/)
+[Requests](http://docs.python-requests.org/en/master/) *Expected to be installed externally.  Use ```pip install requests``` to install
 
 [Httpie](https://github.com/jkbrzt/httpie) *Only used for testing purposes
