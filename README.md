@@ -4,6 +4,11 @@
  python manage.py runserver
 ```
 
+## To run unit tests
+```python
+./manage.py test tests/**/
+```
+
 ## Outline
 
 The way that I am approaching this project:
@@ -29,6 +34,8 @@ The way that I am approaching this project:
 [Django](https://www.djangoproject.com/)
 
 [Requests](http://docs.python-requests.org/en/master/) *Use ```pip install requests``` to install
+
+[Mock](https://pypi.python.org/pypi/mock) *Use ```pip install mock``` to install
 
 [Memcached](http://memcached.org/) *Daemon that runs in background.
 Install for linux ``` sudo apt-get install memcached ```
