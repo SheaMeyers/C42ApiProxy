@@ -119,3 +119,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Cache to store result of events-with-subscriptions call
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211', # Store cache in users port, port 11211 give in example docs
+        'TIMEOUT': 252 # 4.2 minutes
+    }
+}

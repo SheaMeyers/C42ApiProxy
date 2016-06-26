@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from django.views.decorators.cache import cache_page
+
 from C42ApiProxy.helpers.helpers import get_event_title, get_event_names
 
 
+@cache_page(252, cache='default')
 def index(request):
 
     event_id = request.path.split('/')[2]

@@ -24,10 +24,17 @@ The way that I am approaching this project:
 
 7. Add caching so api response is cached.
 
-## External libraries to be used
+## External Libraries
 
 [Django](https://www.djangoproject.com/)
 
-[Requests](http://docs.python-requests.org/en/master/) *Expected to be installed externally.  Use ```pip install requests``` to install
+[Requests](http://docs.python-requests.org/en/master/) *Use ```pip install requests``` to install
 
-[Httpie](https://github.com/jkbrzt/httpie) *Only used for testing purposes
+[Memcached](http://memcached.org/) *Daemon that runs in background.
+Install for linux ``` sudo apt-get install memcached ```
+Install for mac OSX ``` brew install memcached ```
+To run: Open an terminal and run command ``` memcached ```
+
+[Python Memcached](https://pypi.python.org/pypi/python-memcached) *Use ``` pip install python-memcached ``` to install
+
+[Httpie](https://github.com/jkbrzt/httpie) *Only used for testing purposes, not required

@@ -5,7 +5,7 @@ headers = {'Authorization': 'Token a850fb228b367d3cb2f93814a7f5380ff0583142'}
 
 def get_event_details(event_id):
 
-    url = 'http://demo.calendar42.com/api/v2/events/' + event_id + '/'
+    url = 'https://demo.calendar42.com/api/v2/events/' + event_id + '/'
 
     resp = requests.get(url, headers=headers)
 
