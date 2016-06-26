@@ -122,6 +122,7 @@ STATIC_URL = '/static/'
 
 
 # Cache to store result of events-with-subscriptions call
+
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
