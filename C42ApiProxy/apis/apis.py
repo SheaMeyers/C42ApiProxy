@@ -1,6 +1,8 @@
 import requests
 
-headers = {'Authorization': 'Token a850fb228b367d3cb2f93814a7f5380ff0583142'}
+from C42ApiProxy.settings import API_TOKEN
+
+headers = {'Authorization': 'Token {}'.format(API_TOKEN)}
 
 
 def get_event_details(event_id):

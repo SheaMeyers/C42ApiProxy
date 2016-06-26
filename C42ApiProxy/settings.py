@@ -120,6 +120,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# API Token for calling Calendar 42 APIs
+
+API_TOKEN = 'a850fb228b367d3cb2f93814a7f5380ff0583142'
 
 # Cache to store result of events-with-subscriptions call
 
