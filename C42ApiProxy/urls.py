@@ -21,5 +21,5 @@ from C42ApiProxy.views.views import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^events-with-subscriptions/.*/', index)
+    url(r'^events-with-subscriptions/([\w\_]+)/', index)
 ]
