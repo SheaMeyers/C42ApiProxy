@@ -129,7 +129,7 @@ API_TOKEN = 'a850fb228b367d3cb2f93814a7f5380ff0583142'
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211', # Store cache in users port, port 11211 give in example docs
-        'TIMEOUT': 252 # 4.2 minutes
+        'LOCATION': '127.0.0.1:11211',  # Store cache in user's port, port 11211 give in example django docs
+        'TIMEOUT': 252  # 4.2 minutes
     }
 }

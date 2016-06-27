@@ -8,7 +8,7 @@ from C42ApiProxy.helpers.helpers import get_event_title, get_event_names
 @cache_page(252, cache='default')
 def index(request):
     """
-    Renders an html for the request a user makes
+    Renders an html page for the request a user makes
     :param request: The request a user names
     :return: A rendered html page with the event id, event title, and event names
     """

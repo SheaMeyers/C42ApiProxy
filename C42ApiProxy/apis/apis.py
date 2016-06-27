@@ -13,9 +13,9 @@ def get_event_details(event_id):
     """
     url = 'https://demo.calendar42.com/api/v2/events/' + event_id + '/'
 
-    resp = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers)
 
-    return resp.json()
+    return response.json()
 
 
 def get_event_subscriptions(event_id):
@@ -26,6 +26,6 @@ def get_event_subscriptions(event_id):
     """
     url = 'https://demo.calendar42.com/api/v2/event-subscriptions/?event_ids=[' + event_id + ']'
 
-    resp = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers)
 
-    return resp.json()
+    return response.json()

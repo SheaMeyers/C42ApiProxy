@@ -4,6 +4,10 @@
  python manage.py runserver
 ```
 
+### Route
+
+http://127.0.0.1:8000/events-with-subscriptions/$EVENT_ID/
+
 ## To run unit tests
 ```python
 ./manage.py test tests/**/
