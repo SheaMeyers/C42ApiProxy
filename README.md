@@ -27,11 +27,11 @@ The way that I am approaching this project:
 
  b)  As I mentioned above I'll likely use [httpie](https://github.com/jkbrzt/httpie) and the chrome browser to test the GET requests.
 
-3. Create the needed url in urls.py and the handler for this url.  I'll just return a example stub initially to ensure the correct endpoint is getting hit.
+3. Create the needed url in urls.py and the handler for this url.  I'll just return an example stub initially to ensure the correct endpoint is getting hit.
 
 4. I'll create two functions to do the two api calls that are needed.
 
-5. I'll create two helper functions that call the api functions, parse the data in response, and return the needed data.
+5. I'll create two helper functions that call the api functions, parse the data in the response, and return the needed data.
 
 6. I'll change my api endpoint function to get the data from the two helper functions and return the requested data rather than the stub.
 
