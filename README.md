@@ -16,12 +16,16 @@ http://127.0.0.1:8000/events-with-subscriptions/$EVENT_ID/
 ## Outline
 
 The way that I am approaching this project:
-1. Read through the api documents and call apis through a browser to understand how they work and what to behaviour to expect.
-1. a)  I'll likely test it through [httpie](https://github.com/jkbrzt/httpie) as I've found it a useful tool to test apis.
 
-2. Create a new Django project.  I'm going to use Django as we're familiar with the library.
-2.a)  I'm going to use [requests](https://github.com/kennethreitz/requests) to make the get request to C42's apis since it's commonly recommended and simple to use.
-2.b)  As I mentioned above I'll likely use [httpie](https://github.com/jkbrzt/httpie) and the chrome browser to test the GET requests.
+1. Read through the api documents and call apis through a browser to understand how they work and what to behaviour to expect.
+
+ a)  I'll likely test it through [httpie](https://github.com/jkbrzt/httpie) as I've found it a useful tool to test apis.
+
+2. Create a new Django project.  I'm going to use Django as we're both familiar with the library.
+
+ a)  I'm going to use [requests](https://github.com/kennethreitz/requests) to make the get request to C42's apis since it's commonly recommended and simple to use.
+
+ b)  As I mentioned above I'll likely use [httpie](https://github.com/jkbrzt/httpie) and the chrome browser to test the GET requests.
 
 3. Create the needed url in urls.py and the handler for this url.  I'll just return a example stub initially to ensure the correct endpoint is getting hit.
 
@@ -33,6 +37,8 @@ The way that I am approaching this project:
 
 7. Add caching so api response is cached.
 
+8. Add unit tests
+
 ## External Libraries
 
 [Django](https://www.djangoproject.com/)
@@ -42,9 +48,9 @@ The way that I am approaching this project:
 [Mock](https://pypi.python.org/pypi/mock) *Use ```pip install mock``` to install
 
 [Memcached](http://memcached.org/) *Daemon that runs in background.
-Install for linux ``` sudo apt-get install memcached ```
-Install for mac OSX ``` brew install memcached ```
-To run: Open an terminal and run command ``` memcached ```
+Install for linux ``` sudo apt-get install memcached ```.
+Install for mac OSX ``` brew install memcached ```.
+To run: Open an terminal and run command ``` memcached ```.
 
 [Python Memcached](https://pypi.python.org/pypi/python-memcached) *Use ``` pip install python-memcached ``` to install
 
